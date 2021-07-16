@@ -184,25 +184,71 @@ const pro3 = () => {
 
 // hello()
 
-const hello2 = async() => {
-    // const axios = require('axios').default
-    // fetch('https://jsonplaceholder.typicode.com/posts', {
-    //     method: 'GET'
-    // }).then((response) => {
-    //     console.log(response.data)
-    // })
-    // axios.get('https://jsonplaceholder.typicode.com/posts')
-    // .then((response) => {console.log(response)})
+// const hello2 = async() => {
+//     // const axios = require('axios').default
+//     // fetch('https://jsonplaceholder.typicode.com/posts', {
+//     //     method: 'GET'
+//     // }).then((response) => {
+//     //     console.log(response.data)
+//     // })
+//     // axios.get('https://jsonplaceholder.typicode.com/posts')
+//     // .then((response) => {console.log(response)})
     
-    try {
-        let arr = await fetch('https://jsonplaceholder.typicode.com/posts', {
-            method: 'GET'
-        })
-        console.log(arr)
-    } catch (error) {
-        console.log(error)
-    }
+//     try {
+//         let arr = await fetch('https://jsonplaceholder.typicode.com/posts', {
+//             method: 'GET'
+//         })
+//         console.log(arr)
+//     } catch (error) {
+//         console.log(error)
+//     }
     
+// }
+
+// hello2()
+
+
+
+
+
+//higher order function
+
+// const hello = (name) => {
+//     if(name === 'ramesh') {
+//     return function (age) {
+//             // let age = 24
+//             console.log(`${name} ${age}`)
+//         }
+//     }
+//     if(name === 'pramish') {
+//     return function (age) {
+//             // let age = 23
+//             console.log(`${name} ${age}`)
+//         }
+//     }
+//     if(name === 'santosh') {
+//     return function (age) {
+//             // let age = 23
+//             console.log(`${name} ${age}`)
+//         }
+//     }
+// }   
+
+// // hello('ramesh')()
+// const hel = hello('ramesh')
+// hel(24)
+
+
+// variable and function hoisting
+// for variable keeping all the initialized variables top of the js files or top of where the variable is called.
+ // hoisting normally means that taking every function() and keeping then after the that particular function has been initialized.
+ // hoisting works only for normal functions eg;- function hello() {}, doesn't work for arrow functions or functions that are initialized in variable.
+
+ helper()
+
+function helper() {
+    console.log('hello')
 }
 
-hello2()
+// upper function call () is brougt back to down to by js with the help of hoisting.
+//eg;- after hoising or during compiled helper() is brougt back to line 252 or down by js automatically.
